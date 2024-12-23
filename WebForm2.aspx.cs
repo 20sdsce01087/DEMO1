@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace DEMO1
 {
-    public partial class WebForm1 : System.Web.UI.Page
+    public partial class WebForm2 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -16,7 +16,13 @@ namespace DEMO1
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            Response.Write("aavo aavo Swagat chhe");
+            int num1, num2, sum;
+            num1 = int.Parse(TextBox1.Text);
+            num2 = int.Parse(TextBox2.Text);
+            sum= num1 + num2;
+
+            Label3.Visible = true;
+            Label3.Text = "total is "+sum;
         }
     }
 }

@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace DEMO1
 {
-    public partial class WebForm1 : System.Web.UI.Page
+    public partial class Sumaspx : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -16,7 +16,7 @@ namespace DEMO1
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            Response.Write("aavo aavo Swagat chhe");
+
         }
     }
 }
