@@ -67,11 +67,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="2_T_application.aspx" />
+    <Content Include="App_Data\Database1.mdf" />
+    <Content Include="App_Data\Database1_log.ldf">
+      <DependentUpon>Database1.mdf</DependentUpon>
+    </Content>
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
     <Content Include="WebForm2.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="2_T_application.aspx.cs">
+      <DependentUpon>2_T_application.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="2_T_application.aspx.designer.cs">
+      <DependentUpon>2_T_application.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>

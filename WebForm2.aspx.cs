@@ -18,7 +18,7 @@ namespace DEMO1
         {
             int num1, num2, sum;
             num1 = int.Parse(TextBox1.Text);
-            num2 = int.Parse(TextBox2.Text);
+            num2 = int.Parse(TextBox2.Text); 
             sum= num1 + num2;
 
             Label3.Visible = true;
