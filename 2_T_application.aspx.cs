@@ -20,6 +20,7 @@ namespace DEMO1
         protected void Page_Load(object sender, EventArgs e)
         {
             getcon();
+
         }
         void getcon() {
             conn = new SqlConnection(s);
@@ -31,6 +32,7 @@ namespace DEMO1
             getcon();
             cmp = new SqlCommand("insert into stud_tbl(Username,Email,Addres) values ('" + TextBox1.Text + "','" + TextBox2.Text + "','" + TextBox3.Text + "')", conn);
             cmp.ExecuteNonQuery();
+            
         }
     }
 }
